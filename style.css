@@ -1,0 +1,88 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: antiquewhite;
+  font: Helvetica;
+  font-family: Helvetica;
+}
+
+.landing {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exercise {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spud-container {
+  width: 500px;
+  min-width: 40%;
+  max-width: 90%;
+  position: relative;
+}
+
+.spud-image{
+  width: 100%;
+  position: absolute;
+  top: 5rem;
+}
+
+/* potato images starting opacity */
+#potato1 {
+  opacity: 1;
+}
+#potato2 {
+  opacity: 0;
+}
+/* potato images opacity changes on hover */
+.spud-container:hover #potato1 {
+  opacity: 0;
+}
+.spud-container:hover #potato2 {
+  opacity: 1;
+}
+
+/* "Exercise button initial state */
+.spud-button {
+  display: flex;
+  position: absolute;
+  bottom: 5rem;
+  font-size: 1.2rem;
+  background-color: #af762e;
+  border: #000000 solid 0.15rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color:#fff;
+}
+
+/* Exercise button state on hover */
+.spud-button:hover {
+  background-color: #fff;
+  color:#af762e;
+}
+
+/* Container for the exercises */
+.regime-container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regime-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.regime-heading {
+  color: #af762e;
+
+}
